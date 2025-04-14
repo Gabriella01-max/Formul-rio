@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="Página.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <div class="container">
+        <div> 
+    <!--Formulário-->
+    <h2 align="center">Formulário Atendimento de Farmacia</h2>
+    <form action="" method="post">
+        <br />
+        <br />
+        <h2>Dados do Paciente</h2>
+       <p>Nome Completo: <input type="text" name="Nome" placeholder="Escreva seu nome" size="60"/></p> 
+       <br />
+       <p>Data de Nascimento: <input type="date"/></p> 
+       <br />
+       <p>Idade: <input type="number"/></p>
+       <br />
+       <p><label>CPF: <input type="number"/></label></p>
+       <br/>
+       <p>Telefone/WhatsApp:<input type="tel" placeholder="(00) 00000-0000" maxlength="11"/></p> 
+       <br />
+       <label>Sexo:</label>
+       <label for="masculino">Masculino</label><input type="radio" name="sexo">
+       <label for="feminino">Feminino</label><input type="radio" name="sexo">
+       <label for="outro">Outro</label><input type="radio" name="sexo">
+       <br/>
+       <br/>
+       <p>Email: <input type="email"/></p> 
+       <br />
+       <p>Senha: <input type="password" maxlength="8" />(A senha pode ter até 8 caracteres)</p> 
+       <br />
+        <br />
+        <h3>Histórico de Saúde</h3>
+        <label>Possui alergias?</label>
+        <select name="alergias">
+        <option value="">Selecione</option>
+        <option value="sim">Sim</option>
+        <option value="nao">Não</option>
+    <br/>
+</select>
+
+     <label>Quais?</label>
+    <input type="text" name="quais_alergias">
+     <br/>
+    <label>Doenças crônicas:</label>
+    <input type="text" name="doencas_cronicas">
+    <br/>
+   <label>Medicamentos de uso contínuo:</label>
+   <br/>
+   <br/>
+   <textarea name="medicamentos_continuos"></textarea>
+  <br/>
+  <br/>
+<label>Queixa principal:</label>
+<textarea name="queixa_principal"></textarea>
+<br/>
+Deixe um Comentário:
+       <textarea rows="3" cols="10">
+       </textarea>
+        </select>
+       </p>
+<br/>
+<button type="submit">Enviar</button>
+<button type="submit">Reset</button>
+    </form>
+</div>
+</div>
+</body>
+</html>
